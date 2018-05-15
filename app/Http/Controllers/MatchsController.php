@@ -11,10 +11,12 @@ class MatchsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
-        return Matchs::all();
-    }
+    public function index(){
+        $matchs=Matchs::all();
+        return view('matchs', compact('matchs')); 
+        /* la fonction compact équivaut à array('posts' => $posts) */
+     }
+  
 
     /**
      * Show the form for creating a new resource.

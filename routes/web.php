@@ -19,4 +19,4 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/matchs', 'MatchsController@index');
+Route::get('/matchs', 'MatchsController@index')->name('matchs');

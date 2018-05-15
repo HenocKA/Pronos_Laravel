@@ -7,4 +7,5 @@ use Illuminate\Database\Eloquent\Model;
 class Matchs extends Model
 {
     protected $table = 'matchs';
+    
 }
